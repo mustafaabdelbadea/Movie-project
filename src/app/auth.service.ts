@@ -13,4 +13,8 @@ export class AuthService {
    {
     return this._HttpClient.post("https://routeegypt.herokuapp.com/signup",registerData);
    }
+   login(loginData):Observable<any>
+   {
+    return this._HttpClient.post("https://routeegypt.herokuapp.com/signin",loginData);
+   }
 }

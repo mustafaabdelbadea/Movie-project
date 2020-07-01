@@ -1,0 +1,16 @@
+
+@import '../../styles.scss';
+$fontWeight:500;
+
+.test{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+   
+}
+.label-color{
+    color: $bodyBg;
+    font-weight: $fontWeight;
+}
+button{
+    font-weight: $fontWeight;
+}

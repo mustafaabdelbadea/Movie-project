@@ -8,8 +8,26 @@ import {Router} from '@angular/router'
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  signinForm=new FormGroup({
+    
+    'email':new FormControl(null,[Validators.required,Validators.email]),
+    'password':new FormControl(null,[Validators.required,Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/)]),
+  });
+  signIn(){
+    this._AuthService.login(this.signinForm.value).subscribe(data=>{
+     // console.log(data);
+      if(data.message=='success')
+      {
+        this._Router.navigateByUrl("/home");
+      }
+      
+    },
+    err=>{
+      console.log(err);
+    });
+     
+}
+  constructor(private _AuthService:AuthService, private _Router:Router) { }
 
   ngOnInit(): void {
   }

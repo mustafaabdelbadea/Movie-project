@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACEA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAHZ,OAAO;EAIX,WAAW,EAHH,gBAAgB;CAI3B;;ADDD,AAAA,KAAK,CAAA;EACD,gBAAgB,EAAE,OAAO;EACzB,aAAa,EAAE,IAAI;CAEtB;;AACD,AAAA,YAAY,CAAA;EACR,KAAK,ECVD,OAAO;EDWX,WAAW,EATH,GAAG;CAUd;;AACD,AAAA,MAAM,CAAA;EACF,WAAW,EAZH,GAAG;CAad",
     "sources": [
-        "login.component.scss"
+        "login.component.scss",
+        "../../styles.scss"
     ],
     "names": [],
     "file": "login.component.css"
