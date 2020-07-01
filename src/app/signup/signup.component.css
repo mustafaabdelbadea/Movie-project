@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=signup.component.css.map */
+body {
+  background-color: #181824;
+  font-family: "segoe ui light";
+}
+
+.test {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.label-color {
+  color: #181824;
+  font-weight: 500;
+}
+
+button {
+  font-weight: 500;
+}
+
+span {
+  color: #09c;
+}
+/*# sourceMappingURL=signup.component.css.map */
