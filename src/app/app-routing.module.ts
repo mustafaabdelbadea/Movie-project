@@ -4,10 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { MoviesComponent } from './movies/movies.component';
 import { TvComponent } from './tv/tv.component';
 import { PersonComponent } from './person/person.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'home',pathMatch:'full'},
+  {path:'',redirectTo:'signup',pathMatch:'full'},
+  {path:'login',component:LoginComponent},
+  {path:'signup',component:SignupComponent},
+  
   {path:'home',component:HomeComponent},
   {path:'movie',component:MoviesComponent},
   {path:'tv',component:TvComponent},

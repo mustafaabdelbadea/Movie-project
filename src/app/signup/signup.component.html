@@ -24,11 +24,11 @@
       <div class="form-group">
         <label class='label-color'for="">Password</label>
         <input formControlName='password' type="password" class="form-control">
-        <div *ngIf="signupForm.controls.password.invalid&&signupForm.controls.password.touched "  class="alert alert-danger mt-2"> Password not vaild at least one uppercase letter and number</div>
+        <div *ngIf="signupForm.controls.password.invalid&&signupForm.controls.password.touched "  class="alert alert-danger mt-2"> Password not vaild at least one uppercase letter and number and six letters</div>
       </div>
-      <button class="btn btn-primary float-right " type="submit">Submit</button>
+      <button [disabled]='signupForm.invalid' class="btn btn-primary float-right " type="submit">Submit</button>
       <br>
       <br>
-      <p class="text-center">By clicking the Submit button , you agree to out <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+      <p class="text-center">By clicking the Submit button , you agree to our <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
 </form>
 </div>

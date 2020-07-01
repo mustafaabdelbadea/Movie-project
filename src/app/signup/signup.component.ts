@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,Validators } from '@angular/forms'
+import {AuthService } from"../auth.service";
+import {Router} from '@angular/router'
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -14,9 +16,15 @@ export class SignupComponent implements OnInit {
     'password':new FormControl(null,[Validators.required,Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/)]),
   });
   signUp(){
-        
+        this._AuthService.register(this.signupForm.value).subscribe(data=>{
+          this._Router.navigateByUrl("/login");
+        },
+        err=>{
+          console.log(err);
+        });
+         
   }
-  constructor() { }
+  constructor(private _AuthService:AuthService, private _Router:Router) { }
 
   ngOnInit(): void {
   }

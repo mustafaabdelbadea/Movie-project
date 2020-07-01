@@ -16,4 +16,8 @@ a {
   color: #fff !important;
   border-bottom: 3px solid #181824;
 }
+
+* {
+  overflow: auto;
+}
 /*# sourceMappingURL=navbar.component.css.map */
