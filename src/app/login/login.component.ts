@@ -20,7 +20,9 @@ export class LoginComponent implements OnInit {
       {
         this._Router.navigateByUrl("/home");
       }
-      
+     else{
+       alert('Invalid Email or Password');
+     }
     },
     err=>{
       console.log(err);

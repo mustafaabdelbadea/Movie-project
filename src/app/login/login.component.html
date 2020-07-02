@@ -11,6 +11,7 @@
           <input formControlName='password' type="password" class="form-control">
           <div *ngIf="signinForm.controls.password.invalid&&signinForm.controls.password.touched "  class="alert alert-danger mt-2"> Password not vaild</div>
         </div>
+        <a routerLink='/signup'>Don't have account? , Register</a>
         <button [disabled]='signinForm.invalid' class="btn btn-primary float-right " type="submit">Sign In</button>
         
   </form>

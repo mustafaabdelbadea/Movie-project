@@ -20,7 +20,7 @@ export class MovieService {
   }
   getPerson():Observable<any>
   {
-    return this._HttpClient.get("https://api.themoviedb.org/3/trending/person/week?api_key=6de12df8244404b3c5dcbf68134b3f74");
+    return this._HttpClient.get("https://api.themoviedb.org/3/movie/now_playing?api_key=6de12df8244404b3c5dcbf68134b3f74&language=en-US&page=1");
   }
   getTv():Observable<any>
   {
