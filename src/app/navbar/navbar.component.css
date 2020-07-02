@@ -3,6 +3,11 @@ body {
   font-family: "segoe ui light";
 }
 
+.test {
+  color: #fff !important;
+  border-bottom: 3px solid black;
+}
+
 .navbar {
   background-color: #07a5da !important;
 }
@@ -10,11 +15,6 @@ body {
 a {
   color: white !important;
   font-weight: 500;
-}
-
-.test {
-  color: #fff !important;
-  border-bottom: 3px solid #181824;
 }
 
 * {

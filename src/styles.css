@@ -2,4 +2,9 @@ body {
   background-color: #181824;
   font-family: "segoe ui light";
 }
+
+.test {
+  color: #fff !important;
+  border-bottom: 3px solid black;
+}
 /*# sourceMappingURL=styles.css.map */
