@@ -11,4 +11,11 @@ font-weight: 500;}
 *{
     overflow: auto;
 }
-
+.navbar-brand{
+    font-weight: 600;
+    color: $bodyBg !important;
+    font-size: larger !important;
+}
+svg{
+    color:$bodyBg;
+}

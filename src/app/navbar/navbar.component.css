@@ -20,4 +20,14 @@ a {
 * {
   overflow: auto;
 }
+
+.navbar-brand {
+  font-weight: 600;
+  color: #181824 !important;
+  font-size: larger !important;
+}
+
+svg {
+  color: #181824;
+}
 /*# sourceMappingURL=navbar.component.css.map */
