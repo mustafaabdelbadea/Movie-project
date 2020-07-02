@@ -6,13 +6,14 @@ import { TvComponent } from './tv/tv.component';
 import { PersonComponent } from './person/person.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { TopratedComponent } from './toprated/toprated.component';
 
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
-  
+  {path:'toprated',component:TopratedComponent},
   {path:'home',component:HomeComponent},
   {path:'movie',component:MoviesComponent},
   {path:'tv',component:TvComponent},

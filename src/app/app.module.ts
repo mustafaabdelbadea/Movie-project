@@ -11,6 +11,8 @@ import { PersonComponent } from './person/person.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { TopratedComponent } from './toprated/toprated.component';
+import { PopularComponent } from './popular/popular.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { SignupComponent } from './signup/signup.component';
     PersonComponent,
     NavbarComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    TopratedComponent,
+    PopularComponent
   ],
   imports: [
     BrowserModule,

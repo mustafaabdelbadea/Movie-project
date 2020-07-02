@@ -1,0 +1,19 @@
+.movie {
+  -webkit-box-shadow: 0 0 10px #09c;
+  -o-box-shadow: 0 0 10px #09c;
+  -ms-box-shadow: 0 0 10px #09c;
+  box-shadow: 0 0 10px #09c;
+}
+
+.movie-info {
+  position: relative;
+}
+
+.movie-info .avg {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  background-color: #09c;
+  color: gold;
+}
+/*# sourceMappingURL=toprated.component.css.map */
