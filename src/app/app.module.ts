@@ -13,6 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { TopratedComponent } from './toprated/toprated.component';
 import { PopularComponent } from './popular/popular.component';
+import { UpcomingComponent } from './upcoming/upcoming.component';
+import { SeriesComponent } from './series/series.component';
+import { VoteaverageComponent } from './voteaverage/voteaverage.component';
+import { VotenewComponent } from './votenew/votenew.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,11 @@ import { PopularComponent } from './popular/popular.component';
     LoginComponent,
     SignupComponent,
     TopratedComponent,
-    PopularComponent
+    PopularComponent,
+    UpcomingComponent,
+    SeriesComponent,
+    VoteaverageComponent,
+    VotenewComponent
   ],
   imports: [
     BrowserModule,

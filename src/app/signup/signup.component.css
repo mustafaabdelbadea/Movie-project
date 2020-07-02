@@ -4,6 +4,15 @@ body {
 }
 
 .test {
+  color: #fff !important;
+  border-bottom: 3px solid black;
+}
+
+.rowOverflow {
+  overflow: hidden !important;
+}
+
+.signupsc {
   background-color: #f1f1f1;
   border-radius: 10px;
 }

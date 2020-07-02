@@ -35,5 +35,21 @@ export class MovieService {
   {
     return this._HttpClient.get("https://api.themoviedb.org/3/movie/popular?api_key=6de12df8244404b3c5dcbf68134b3f74&language=en-US&page=1");
   }
- 
+  getUpcoming():Observable<any>
+  {
+    return this._HttpClient.get("https://api.themoviedb.org/3/movie/upcoming?api_key=6de12df8244404b3c5dcbf68134b3f74&language=en-US&page=1");
+  }
+  // getSeries():Observable<any>
+  // {
+  //   return this._HttpClient.get("http://api.tvmaze.com/shows/1/episodes");
+  // }
+
+  getVoteaverage():Observable<any>
+  {
+    return this._HttpClient.get("https://api.themoviedb.org/3/discover/movie?api_key=6de12df8244404b3c5dcbf68134b3f74&language=en-US&sort_by=vote_count.desc&include_adult=false&include_video=false&page=3");
+  }
+  getNew():Observable<any>
+  {
+    return this._HttpClient.get("https://api.themoviedb.org/3/discover/movie?api_key=6de12df8244404b3c5dcbf68134b3f74&language=en-US&sort_by=vote_count.desc&include_adult=false&include_video=false&page=1");
+  }
 }

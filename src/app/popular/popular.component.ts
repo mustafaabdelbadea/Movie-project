@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MovieService } from '../movie.service';
 @Component({
   selector: 'app-popular',
   templateUrl: './popular.component.html',
@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopularComponent implements OnInit {
 
-  constructor() { }
-
+  populars:object[]=[];
+  imgUrl:string="https://image.tmdb.org/t/p/original";
+  constructor(_MovieService:MovieService) { 
+    _MovieService.getPopular().subscribe((data)=>{
+      this.populars=data.results;
+    });
+  }
   ngOnInit(): void {
   }
 
