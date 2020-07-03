@@ -24,9 +24,10 @@ const routes: Routes = [
   {path:'tv',component:TvComponent},
   {path:'popular',component:PopularComponent},
   {path:'upcoming',component:UpcomingComponent},
-    {path:'voteaverage',component:VoteaverageComponent},
-    {path:'votenew',component:VotenewComponent},
-  {path:'person',component:PersonComponent}
+  {path:'voteaverage',component:VoteaverageComponent},
+  {path:'votenew',component:VotenewComponent},
+  {path:'person',component:PersonComponent},
+  {path:'series',component:SeriesComponent}
 
 ];
 

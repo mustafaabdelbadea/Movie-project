@@ -39,10 +39,10 @@ export class MovieService {
   {
     return this._HttpClient.get("https://api.themoviedb.org/3/movie/upcoming?api_key=6de12df8244404b3c5dcbf68134b3f74&language=en-US&page=1");
   }
-  // getSeries():Observable<any>
-  // {
-  //   return this._HttpClient.get("http://api.tvmaze.com/shows/1/episodes");
-  // }
+  getSeries():Observable<any>
+  {
+    return this._HttpClient.get("https://www.episodate.com/api/most-popular?page=1");
+  }
 
   getVoteaverage():Observable<any>
   {

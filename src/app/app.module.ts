@@ -17,6 +17,7 @@ import { UpcomingComponent } from './upcoming/upcoming.component';
 import { SeriesComponent } from './series/series.component';
 import { VoteaverageComponent } from './voteaverage/voteaverage.component';
 import { VotenewComponent } from './votenew/votenew.component';
+
 @NgModule({
   declarations: [
     AppComponent,

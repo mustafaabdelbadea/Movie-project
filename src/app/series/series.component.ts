@@ -7,8 +7,14 @@ import { MovieService } from '../movie.service';
 })
 export class SeriesComponent implements OnInit {
 
-  constructor() { }
-
+  series:object[]=[];
+  //imgUrl:string="https://image.tmdb.org/t/p/original";
+  constructor(_MovieService:MovieService) { 
+    _MovieService.getSeries().subscribe((data)=>{
+      console.log(data.tv_shows)
+      this.series=data.tv_shows;
+    });
+  }
   ngOnInit(): void {
   }
 
