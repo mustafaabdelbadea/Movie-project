@@ -8,6 +8,10 @@ body {
   border-bottom: 3px solid black;
 }
 
+.rowOverflow {
+  overflow: hidden !important;
+}
+
 .navbar {
   background-color: #07a5da !important;
 }

@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit {
      // console.log(data);
       if(data.message=='success')
       {
+        localStorage.setItem('token',data.token);
+
         this._Router.navigateByUrl("/home");
       }
      else{
