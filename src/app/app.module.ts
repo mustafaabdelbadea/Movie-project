@@ -17,6 +17,9 @@ import { UpcomingComponent } from './upcoming/upcoming.component';
 import { SeriesComponent } from './series/series.component';
 import { VoteaverageComponent } from './voteaverage/voteaverage.component';
 import { VotenewComponent } from './votenew/votenew.component';
+import{NgxSpinnerModule } from 'ngx-spinner';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DetailsComponent } from './details/details.component'; 
 
 @NgModule({
   declarations: [
@@ -33,14 +36,18 @@ import { VotenewComponent } from './votenew/votenew.component';
     UpcomingComponent,
     SeriesComponent,
     VoteaverageComponent,
-    VotenewComponent
+    VotenewComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

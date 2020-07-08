@@ -12,22 +12,26 @@ import { UpcomingComponent } from './upcoming/upcoming.component';
 import { SeriesComponent } from './series/series.component';
 import { VoteaverageComponent } from './voteaverage/voteaverage.component';
 import { VotenewComponent } from './votenew/votenew.component';
+import { AuthService } from './auth.service';
+import { AuthGuardService } from './auth-guard.service';
+import { DetailsComponent } from './details/details.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
-  {path:'toprated',component:TopratedComponent},
-  {path:'home',component:HomeComponent},
-  {path:'movie',component:MoviesComponent},
-  {path:'tv',component:TvComponent},
-  {path:'popular',component:PopularComponent},
-  {path:'upcoming',component:UpcomingComponent},
-  {path:'voteaverage',component:VoteaverageComponent},
-  {path:'votenew',component:VotenewComponent},
-  {path:'person',component:PersonComponent},
-  {path:'series',component:SeriesComponent}
+  {path:'toprated',component:TopratedComponent,canActivate:[AuthGuardService]},
+  {path:'home',component:HomeComponent,canActivate:[AuthGuardService]},
+  {path:'movie',component:MoviesComponent,canActivate:[AuthGuardService]},
+  {path:'tv',component:TvComponent,canActivate:[AuthGuardService]},
+  {path:'popular',component:PopularComponent,canActivate:[AuthGuardService]},
+  {path:'upcoming',component:UpcomingComponent,canActivate:[AuthGuardService]},
+  {path:'voteaverage',component:VoteaverageComponent,canActivate:[AuthGuardService]},
+  {path:'votenew',component:VotenewComponent,canActivate:[AuthGuardService]},
+  {path:'person',component:PersonComponent,canActivate:[AuthGuardService]},
+  {path:'details',component:DetailsComponent,canActivate:[AuthGuardService]},
+  {path:'series',component:SeriesComponent,canActivate:[AuthGuardService]}
 
 ];
 

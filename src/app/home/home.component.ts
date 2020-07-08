@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../movie.service';
-import { Router } from '@angular/router';
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'app-home',
@@ -10,21 +10,21 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   all:object[]=[];
   imgUrl:string="https://image.tmdb.org/t/p/original";
-  constructor(_MovieService:MovieService ,_Router:Router) {
-    var token=localStorage.getItem('token');
-    if(token==null){
-      _Router.navigateByUrl("/login");
-    } 
-    else{
-      _MovieService.getAllMovies().subscribe((data)=>{
-        this.all=data.results;
-      });
-  
-    }
+  constructor(_MovieService:MovieService, private _NgxSpinnerService:NgxSpinnerService) { 
    
+   _NgxSpinnerService.show()
+    _MovieService.getAllMovies().subscribe((data)=>{
+      this.all=data.results;
+      setTimeout(() => {
+        this._NgxSpinnerService.hide();
+      }, 2000);
+    });
+
   }
 logout(){
   localStorage.removeItem('token');
+  window.location.reload();
+
 }
   ngOnInit(): void {
   }
