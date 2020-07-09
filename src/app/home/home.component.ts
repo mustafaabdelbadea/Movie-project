@@ -9,6 +9,8 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class HomeComponent implements OnInit {
   all:object[]=[];
+
+  
   imgUrl:string="https://image.tmdb.org/t/p/original";
   constructor(_MovieService:MovieService, private _NgxSpinnerService:NgxSpinnerService) { 
    

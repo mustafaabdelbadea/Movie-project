@@ -30,7 +30,7 @@ const routes: Routes = [
   {path:'voteaverage',component:VoteaverageComponent,canActivate:[AuthGuardService]},
   {path:'votenew',component:VotenewComponent,canActivate:[AuthGuardService]},
   {path:'person',component:PersonComponent,canActivate:[AuthGuardService]},
-  {path:'details',component:DetailsComponent,canActivate:[AuthGuardService]},
+ 
   {path:'series',component:SeriesComponent,canActivate:[AuthGuardService]}
 
 ];

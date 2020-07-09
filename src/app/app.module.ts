@@ -19,7 +19,8 @@ import { VoteaverageComponent } from './voteaverage/voteaverage.component';
 import { VotenewComponent } from './votenew/votenew.component';
 import{NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DetailsComponent } from './details/details.component'; 
+import { DetailsComponent } from './details/details.component';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DetailsComponent } from './details/details.component';
     VoteaverageComponent,
     VotenewComponent,
     DetailsComponent
+    
   ],
   imports: [
     BrowserModule,

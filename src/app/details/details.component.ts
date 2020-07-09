@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import{ActivatedRoute} from '@angular/router';
+import {MovieService} from '../movie.service';
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
-
+ 
+  constructor() { 
+  
+  }
   ngOnInit(): void {
   }
 
