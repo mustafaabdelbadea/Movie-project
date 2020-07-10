@@ -6,7 +6,7 @@ import { MovieService } from '../movie.service';
   styleUrls: ['./popular.component.scss']
 })
 export class PopularComponent implements OnInit {
-
+  searchText:any;
   populars:object[]=[];
   imgUrl:string="https://image.tmdb.org/t/p/original";
   constructor(_MovieService:MovieService) { 

@@ -7,6 +7,7 @@ import { MovieService } from '../movie.service';
   styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent implements OnInit {
+  searchText:any;
 
   movie:object[]=[];
   imgUrl:string="https://image.tmdb.org/t/p/original";

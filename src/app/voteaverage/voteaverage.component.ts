@@ -7,7 +7,7 @@ import { MovieService } from '../movie.service';
   styleUrls: ['./voteaverage.component.scss']
 })
 export class VoteaverageComponent implements OnInit {
-
+  searchText:any;
   average:object[]=[];
   imgUrl:string="https://image.tmdb.org/t/p/original";
   constructor(_MovieService:MovieService) { 

@@ -7,7 +7,7 @@ import { MovieService } from '../movie.service';
   styleUrls: ['./tv.component.scss']
 })
 export class TvComponent implements OnInit {
-
+  searchText:any;
   tv:object[]=[];
   imgUrl:string="https://image.tmdb.org/t/p/original";
   constructor(_MovieService:MovieService) { 

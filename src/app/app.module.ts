@@ -20,6 +20,7 @@ import { VotenewComponent } from './votenew/votenew.component';
 import{NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailsComponent } from './details/details.component';
+import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { DetailsComponent } from './details/details.component';
     SeriesComponent,
     VoteaverageComponent,
     VotenewComponent,
-    DetailsComponent
+    DetailsComponent,
+    SearchPipe
     
   ],
   imports: [

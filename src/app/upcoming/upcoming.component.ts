@@ -6,7 +6,7 @@ import { MovieService } from '../movie.service';
   styleUrls: ['./upcoming.component.scss']
 })
 export class UpcomingComponent implements OnInit {
-
+  searchText:any;
   upcomes:object[]=[];
   imgUrl:string="https://image.tmdb.org/t/p/original";
   constructor(_MovieService:MovieService) { 

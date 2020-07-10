@@ -7,7 +7,7 @@ import { MovieService } from '../movie.service';
 })
 export class TopratedComponent implements OnInit {
 
-  
+  searchText:any;
   top:object[]=[];
   imgUrl:string="https://image.tmdb.org/t/p/original";
   constructor(_MovieService:MovieService) { 
