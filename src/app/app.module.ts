@@ -21,6 +21,7 @@ import{NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailsComponent } from './details/details.component';
 import { SearchPipe } from './search.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { SearchPipe } from './search.pipe';
     VoteaverageComponent,
     VotenewComponent,
     DetailsComponent,
-    SearchPipe
+    SearchPipe,
+    FooterComponent
     
   ],
   imports: [
